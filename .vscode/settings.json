@@ -1,0 +1,22 @@
+{
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.fontSize": 15,
+    "editor.fontSize": 15,
+    "workbench.colorTheme": "Default Dark Modern",
+    "terminal.integrated.persistentSessionReviveProcess": "onExitAndWindowClose",
+    "workbench.startupEditor": "none",
+    "debug.internalConsoleOptions": "openOnSessionStart",
+    "auto-run-command.rules": [
+        {
+            "condition": [
+                "hasFile: src/app.js",
+                "isRootFolder: workspace"
+              ],
+            "command": [
+                "workbench.action.terminal.toggleTerminal",
+                "welcome.markStepComplete",
+                "workbench.action.closeAllEditors"
+            ]
+        }
+    ]
+}
