@@ -17,7 +17,6 @@ app.set('view engine', 'ejs')
 // 3rd step
 const css= path.join(__dirname, './public/css');
 const js= path.join(__dirname, './public/js');
-// app.use(express.static(__dirname, './public'))
 app.use(express.static(css))
 app.use(express.static(js))
 
@@ -30,6 +29,7 @@ app.get('/', (req, res) => {
     res.render('index', objj)
 })
 
+// 6th step
 app.get('/profile', (req, res) => {
     const userobj = {
         user: users[0]
